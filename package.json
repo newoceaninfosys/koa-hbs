@@ -1,11 +1,11 @@
 {
-  "name": "koa-hbs",
-  "version": "0.9.0",
-  "description": "Handlebars Templates via Generators for Koa",
+  "name": "@nois/koa-hbs",
+  "version": "1.0.1",
+  "description": "Handlebars Templates via Async/Await for Koa",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gilt/koa-hbs.git"
+    "url": "git+https://github.com/gilt/koa-hbs.git"
   },
   "homepage": "https://github.com/gilt/koa-hbs/",
   "scripts": {
@@ -20,27 +20,39 @@
   ],
   "author": "Joe Wilm <jdwilm@gmail.com>",
   "maintainers": [
-    {
-      "name": "Andrew Powell",
-      "email": "andrew@shellscape.org"
-    }
+    "Andrew Powell <andrew@shellscape.org>"
   ],
+  "publishConfig": {
+    "tag": "next"
+  },
   "license": "MIT",
   "dependencies": {
-    "glob": "^7.0.5",
-    "handlebars": "^4.0.5"
+    "glob": "^7.1.2",
+    "handlebars": "^4.0.10"
   },
   "devDependencies": {
     "co": "^4.6.0",
-    "eslint": "^3.12.2",
+    "eslint": "^3.19.0",
     "gulp": "^3.9.1",
     "gulp-eslint": "^3.0.1",
-    "gulp-mocha": "^3.0.1",
-    "koa": "^1.2.0",
-    "koa-router": "^5.4.0",
-    "supertest": "^2.0.1"
+    "gulp-mocha": "^4.3.1",
+    "harmonica": "^1.2.2",
+    "koa": "^2.2.0",
+    "koa-router": "^7.2.0",
+    "supertest": "^3.0.0"
+  },
+  "peerDependencies": {
+    "koa": "^2.0.0"
   },
   "engines": {
-    "node": ">= 4.7.0"
+    "node": ">= 7.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/gilt/koa-hbs/issues"
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "test"
   }
 }
